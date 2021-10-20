@@ -1,5 +1,4 @@
 # Robust Journey Planning
-## Lab in Data Science - Final Project
 
 by
 - Fedor Moiseev
@@ -7,13 +6,13 @@ by
 - Pushkar Jajoria
 - Jan Bauer
 
-In this final project, we have build a Robust Journey Planning system which uses the data provided by SBB which ameliorates the problem of journey planning with travel delays uncertainities. The program computes the optimal route from A to B in the city of Zurich, considering that the traveler wants to arrive at his destination before a fixed arrival deadline with a probability above a chosen certainty threshold. The application has been built upon the basic assumptions listed as part of the overview. More detailed task description you can see at [TASK_DESCRIPTION.md](./TASK_DESCRIPTION.md) (we moved text from initial README.md there to make this README file more concise).
+In this project, we have build a Robust Journey Planning system which uses the data provided by SBB which ameliorates the problem of journey planning with travel delays uncertainities. The program computes the optimal route from A to B in the city of Zurich, considering that the traveler wants to arrive at his destination before a fixed arrival deadline with a probability above a chosen certainty threshold. The application has been built upon the basic assumptions listed as part of the overview. More detailed task description you can see at [TASK_DESCRIPTION.md](./TASK_DESCRIPTION.md).
 
 ### HOW-TO
 To run our demo and test our approach, you can follow these steps:
-1. Create Renku environment with at least 4Gb RAM.
+1. Create an environment with at least 4Gb RAM.
 2. Connect to it. Now you have 2 options:
-    1. Use voila to run our demo: replace `/lab?` in the end of URL with `/voila` (for example `https://dslab2021-renku.epfl.ch/jupyterhub/user/moiseev/final-assignment-51b6ce37/lab? -> https://dslab2021-renku.epfl.ch/jupyterhub/user/moiseev/final-assignment-51b6ce37/voila`). In the menu on this page, go to notebooks folder and open `FINAL-voila.ipynb` notebook (it could take some time to load models from disc). When it's loaded, you could select origin, destination, date, arrival time, desired confidence threshold and number of routes to predict and our model will suggest you routes and display them on a map. **Be careful: Increasing desired number of routes to a value too big can significantly slow down prediction, so we suggest to you to try it with this parameter <= 3.**
+    1. Use voila to run our demo: replace `/lab?` in the end of URL with `/voila`. In the menu on this page, go to notebooks folder and open `FINAL-voila.ipynb` notebook (it could take some time to load models from disc). When it's loaded, you could select origin, destination, date, arrival time, desired confidence threshold and number of routes to predict and our model will suggest you routes and display them on a map. **Be careful: Increasing desired number of routes to a value too big can significantly slow down prediction, so we suggest to you to try it with this parameter <= 3.**
     2. Alternatively, you can run our demo as usual Jupyter notebook. Just go to notebooks folder in Jupyter lab, open `FINAL-voila.ipynb` notebook and run it from start to end. In the last cell interactive widget will appear to set desired parameters.
 
 Steps above describe how you can run our pretrained models and graph that we saved on GIT LFS (to save your time, because full data preparation and model training takes a lot of time). If you want to repeat all steps, refer to [Repeat All Steps](#repeat-all-steps) section.
